@@ -9,7 +9,7 @@ import bg from "@/assets/images/Exterior - 2.jpg";
 
 const HeroSection = () => {
     return <>
-    <Image src={bg} alt="The Spark By Esnaad Building" fill className="bg-hero absolute w-screen h-screen" />
+    <Image src={bg} loading="lazy" alt="The Spark By Esnaad Building" fill className="bg-hero absolute w-screen h-screen" />
     <div className="absolute top-0 bg-hero w-full h-full"></div>
     <section id="hero" className="block min-h-[100vh] h-auto bg-hero bg-center bg-no-repeat bg-cover ">
         <section className="mt-24 lg:mt-0 lg:relative h-full px-12 ">
