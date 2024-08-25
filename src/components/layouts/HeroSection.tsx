@@ -5,13 +5,9 @@ import IconExport from "../icons/IconExport";
 import Link from "next/link";
 import DownloadBrochure from "../buttons/DownloadBrochure";
 import FadeInWrapper from "./FadeInWrapper";
-import bg from "@/assets/images/Exterior - 2.jpg";
 
 const HeroSection = () => {
-    return <>
-    <section id="hero" className="block min-h-[100vh] h-auto bg-hero bg-center bg-no-repeat bg-cover ">
-        <Image src={bg} loading="lazy" alt="The Spark By Esnaad Building" fill className="bg-hero absolute w-screen h-screen" />
-        <div className="absolute top-0 bg-hero w-full h-full"></div>
+    return <section id="hero" className="block min-h-[100vh] h-auto bg-hero bg-center bg-no-repeat bg-cover ">
         <section className="mt-24 lg:mt-0 lg:relative h-full px-12 ">
             <div className="w-full mx-auto h-full max-w-full">
                 <div className="flex flex-grow pb-10 pt-[150px] lg:pt-40 h-full items-stretch justify-center flex-col  ">
@@ -59,7 +55,6 @@ const HeroSection = () => {
             </div>
         </section>
     </section>
-    </>
 }
 
 export default HeroSection;

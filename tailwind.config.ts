@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "linear-gradient(rgba(0, 0, 0, .5) 5%, rgba(0, 0, 0, .6))", // , url('/assets/spark/RENDERINGS/EXTERIOR/Exterior - 2.jpg')
+        hero: "linear-gradient(rgba(0, 0, 0, .5) 5%, rgba(0, 0, 0, .6)), url('/assets/spark/RENDERINGS/EXTERIOR/Exterior - 2.jpg')",
         "head-modal": "linear-gradient(to right, var(--white) 50%, rgba(255, 255, 255, 0)), url('/assets/images/frameview.jpg')"
       },
       backgroundColor: {
