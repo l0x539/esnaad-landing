@@ -20,8 +20,8 @@ const Header = () => {
           <Image loading="lazy" src={whiteImage} width={190} height={34} alt="ESNAAD Real Estate Development Logo - Luxury Homes in Dubai" />
         </Link>
         <div className="flex justify-end items-center w-full gap-x-7">
-          <nav className="static xl:block float-right w-full hidden">
-            <div className="flex justify-end w-full">
+          <nav className="static xl:block float-right w-full hidden h-10">
+            <div className="flex justify-end w-full h-full">
               <div className="flex justify-end gap-x-7">
                 <NavLink href="#about" className="relative text-left align-top">
                   About the project

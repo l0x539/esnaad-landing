@@ -27,7 +27,7 @@ const MapButton = () => {
                 <div className="leading-[.9] font-light text-8xl tracking-normal">
                     Map
                 </div>
-                <div className="leading-[1.5] self-start">Open</div>
+                <div className="leading-[1.5] self-start">Click Open</div>
             </div>
             <ModalWrapper isModalOpen={isOpen} closeModal={closeModalHandler}>
                 <MapPopup />
