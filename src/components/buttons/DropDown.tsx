@@ -45,7 +45,7 @@ const DropDown: FC<{
         <nav
           className={`${
             isOpen ? "visible" : "hidden"
-          } absolute top-16 flex items-center flex-col text-bt-secondary overflow-hidden rounded-2xl bg-silver min-w-full bg-primary text-left outline outline-offset-0 outline-white/10 outline-solid outline-1 w-full`}
+          } absolute top-32 py-4 lg:py-0 lg:top-16 flex items-center flex-col text-bt-secondary overflow-hidden rounded-2xl bg-silver min-w-full bg-primary text-left outline outline-offset-0 outline-white/10 outline-solid outline-1 w-full`}
         >
           {children}
         </nav>

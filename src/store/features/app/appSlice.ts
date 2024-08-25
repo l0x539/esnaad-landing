@@ -2,10 +2,9 @@
 import { AppState } from "@/store/store";
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
 const initialState = {
-  isModalOpen: false
+  isModalOpen: false,
+  isSideMenuOpen: false,
 };
 
 const appSlice = createSlice({
@@ -13,18 +12,24 @@ const appSlice = createSlice({
   initialState,
   reducers: {
     openModal: (state) => {
-      state.isModalOpen = true
+      state.isModalOpen = true;
     },
     closeModal: (state) => {
-      state.isModalOpen = false
+      state.isModalOpen = false;
     },
     setModal: (state, action) => {
-      state.isModalOpen = action.payload
-    }
+      state.isModalOpen = action.payload;
+    },
+    openSideMenu: (state) => {
+      state.isSideMenuOpen = true;
+    },
+    closeSideMenu: (state) => {
+      state.isSideMenuOpen = false;
+    },
   },
 });
 
-export const { setModal, openModal, closeModal } = appSlice.actions;
+export const { setModal, openModal, closeModal, openSideMenu, closeSideMenu } = appSlice.actions;
 
 export const selectApp = (state: AppState) => state.app;
 

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import whiteImage from "@/assets/images/logo-white.png";
@@ -6,16 +7,20 @@ import PrimaryButton from "../buttons/PrimaryButton";
 import IconDownload from "../icons/IconDownload";
 import SecondaryButton from "../buttons/SecondaryButton";
 import DropDown from "../buttons/DropDown";
+import { RxHamburgerMenu } from "react-icons/rx";
+import useNavSidebar from "@/hooks/useNavSidebar";
 
 const Header = () => {
+  const { isSideMenuOpen, toggleSideMenu } = useNavSidebar();
+
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-auto z-40 px-16 py-8 bg-primary text-bt-secondary min-h-20">
+    <div className="fixed flex items-center top-0 left-0 right-0 bottom-auto z-40 px-16 py-8 bg-primary text-bt-secondary min-h-[80px] lg:min-h-20">
       <div className="flex mx-auto justify-space-between items-center w-full h-full ">
         <Link href={"#hero"} className="inline-block max-w-full">
           <Image src={whiteImage} width={190} height={34} alt="ESNAAD Real Estate Development Logo - Luxury Homes in Dubai" />
         </Link>
         <div className="flex justify-end items-center w-full gap-x-7">
-          <nav className="static block float-right w-full">
+          <nav className="static xl:block float-right w-full hidden">
             <div className="flex justify-end w-full">
               <div className="flex justify-end gap-x-7">
                 <NavLink href="#about" className="relative text-left align-top">
@@ -47,7 +52,7 @@ const Header = () => {
             </div>
           </nav>
           <div className="ml-20 flex flex-none flex-wrap gap-2.5">
-            <div className="">
+            <div className="hidden xl:block">
               <div className="relative flex flex-col items-start max-w-fit ">
                 <PrimaryButton className="before:content-phone before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:h-4 before:w-4">
                   Call Us
@@ -62,6 +67,11 @@ const Header = () => {
                 Ar
               </Link>
             </DropDown>
+            <div className="inline-flex xl:hidden ml-6">
+                <button className="" onClick={toggleSideMenu}>
+                  <RxHamburgerMenu className="w-24 h-24" />
+                </button>
+            </div>
           </div>
         </div>
       </div>

@@ -59,8 +59,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`min-h-0 bg-main ${manrope.className}`}>
+    <html lang="en" className="scroll-smooth bg-primary">
+      <body className={`min-h-0 bg-primary ${manrope.className}`}>
         <Layout>
           {children}
         </Layout>
