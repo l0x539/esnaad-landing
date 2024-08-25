@@ -20,7 +20,7 @@ function ConsultationSection() {
               <div className="md:col-span-1 md:row-span-1 text-[8rem] md:text-[4.2rem]  leading-none ">
                 Free consultation from Sales Team
               </div>
-              <Image
+              <Image loading="lazy"
                 src={img}
                 className="hidden md:block col-start-2 col-end-3 row-start-1 row-end-3 w-[37rem] mr-0 pb-0 pr-0 max-w-full align-middle"
                 alt="woman picture"

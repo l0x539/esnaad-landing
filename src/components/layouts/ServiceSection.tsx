@@ -76,7 +76,7 @@ const CompanyStep = () => {
             </div>
         </div>
         <div className="relative left-0 right-0 top-0 bottom-0 pt-[75%] mt-5">
-            <Image src={swimmingpool} className="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover object-center" alt="Swimming pools" />
+            <Image loading="lazy" src={swimmingpool} className="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover object-center" alt="Swimming pools" />
         </div>
     </div>;
 }

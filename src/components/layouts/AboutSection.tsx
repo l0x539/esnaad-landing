@@ -77,7 +77,7 @@ const AboutSection = () => {
                             className="pb-9 border-b border-solid border-silver mt-64 max-w-[32rem]] will-change-transform self-start row-[about-pic1] col-[about-pic1]"
                         >
                             <div className="relative pt-[130%]">
-                                <Image className="inline-block align-middle max-w-full object-cover w-full absolute top-0 left-0 right-0 bottom-0 h-full" src={swimpool} alt="Rooftop Pool Image" loading="lazy" />
+                                <Image loading="lazy" className="inline-block align-middle max-w-full object-cover w-full absolute top-0 left-0 right-0 bottom-0 h-full" src={swimpool} alt="Rooftop Pool Image" />
                             </div>
                             <div className="leading-tight font-normal text-4xl mt-9 ">Elevate Your Living with Luxurious Rooftop Retreats</div>
                             <p className="leading-6 overflow-hidden mr-[30px] mt-[30px] text-silver hidden"></p>
@@ -86,7 +86,7 @@ const AboutSection = () => {
                             gridArea: "about-pic2"
                         }}>
                             <div className="overflow-hidden relative pt-[75%]">
-                                <Image className="inline-block align-middle max-w-full object-contain w-full absolute top-0 left-0 right-0 bottom-0 h-full" src={roofview} alt="Rooftop Sitting Area Image." width={2450} height={1400} />
+                                <Image loading="lazy" className="inline-block align-middle max-w-full object-contain w-full absolute top-0 left-0 right-0 bottom-0 h-full" src={roofview} alt="Rooftop Sitting Area Image." width={2450} height={1400} />
                             </div>
                             <div className="mt-7 text-3xl font-normal leading-tight">Unmatched Skyline Views and Exclusive Amenities</div>
                             <p className="leading-6 overflow-hidden mr-[30px] mt-[30px] text-silver hidden"></p>
@@ -94,7 +94,7 @@ const AboutSection = () => {
                         <div className="block mt-36 max-w-60 row-[about-logo] col-[about-logo]" style={{
                             gridArea: "about-logo"
                         }}>
-                            <Image src={sparkbyesnaad} alt="The Spark by ESNAAD Logo - Luxury Residential Project in Mohamed Bin Rashid City, Dubai" className="w-80 mb-4 max-w-full inline-block h-auto" />
+                            <Image loading="lazy" src={sparkbyesnaad} alt="The Spark by ESNAAD Logo - Luxury Residential Project in Mohamed Bin Rashid City, Dubai" className="w-80 mb-4 max-w-full inline-block h-auto" />
                             <Link href="#" className="max-w-full flex text-base pr-3 justify-between" >
                                 <div>About developer</div>
                                 <div className="flex ml-[4px] h-[1.4em] w-[1.4em] items-center justify-center flex-col">
@@ -112,7 +112,7 @@ const AboutSection = () => {
                             gridArea: "about-pic3"
                         }}>
                             <div className="relative pt-[100%] ">
-                                <Image className="object-cover absolute top-0 left-0 right-0 bottom-0 max-w-[40vw] h-[100%] max-h-none align-middle inline-block" src={gym} alt="Gym Image" />
+                                <Image loading="lazy" className="object-cover absolute top-0 left-0 right-0 bottom-0 max-w-[40vw] h-[100%] max-h-none align-middle inline-block" src={gym} alt="Gym Image" />
                             </div>
                             <div className="leading-[1.2] text-4xl mt-7">Wellness and Fitness at Your Doorstep</div>
                             <p className="leading-6 overflow-hidden mr-[30px] mt-[30px] text-silver hidden"></p>

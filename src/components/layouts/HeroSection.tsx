@@ -15,11 +15,11 @@ const HeroSection = () => {
                         <div className="flex flex-col w-full lg:max-w-4xl justify-between">
                             <div className="flex w-full lg:pl-16 lg:flex-col gap-y-14">
                                 <div className="flex items-center">
-                                    <Image src={union} alt="Plus sign" className="top-14 lg:top-7 relative  w-[25px] h-[25px] lg:w-[34px] lg:h-[34px]" />
+                                    <Image loading="lazy" src={union} alt="Plus sign" className="top-14 lg:top-7 relative  w-[25px] h-[25px] lg:w-[34px] lg:h-[34px]" />
                                     <div className="leading-10 uppercase text-[5rem] lg:text-4xl text-bt-primary font-light">Luxury Residences</div>
                                 </div>
                                 <div className="flex items-center ml-52">
-                                    <Image src={union} alt="Plus sign" className="top-14 lg:top-7 relative  w-[25px] h-[25px] lg:w-[34px] lg:h-[34px]" />
+                                    <Image loading="lazy" src={union} alt="Plus sign" className="top-14 lg:top-7 relative  w-[25px] h-[25px] lg:w-[34px] lg:h-[34px]" />
                                     <div className="leading-10 uppercase  text-[5rem] lg:text-4xl text-bt-primary">Elegance</div>
                                 </div>
                             </div>

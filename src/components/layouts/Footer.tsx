@@ -24,7 +24,7 @@ const Footer = () => {
               <div className="grid gap-4 grid-cols-3 auto-cols-fr">
                 <FooterColumn>
                   <Link href="#" className="w-72 max-w-full inline-block">
-                    <Image
+                    <Image loading="lazy"
                       src={whiteImage}
                       alt="Esnaad Logo footer"
                       className="max-w-full align-middle inline-block"
@@ -84,36 +84,36 @@ const Footer = () => {
                   </div>
                   <div className="grid justify-center auto-cols-fr gap-y-5 p-0 gap-x-5 grid-cols-[repeat(5,auto)]">
                     <FooterSocialLink href="#" >
-                      <Image src={facebook} alt="Esnaad Facebook image" width={39} height={39} />
+                      <Image loading="lazy" src={facebook} alt="Esnaad Facebook image" width={39} height={39} />
                     </FooterSocialLink>
                     <FooterSocialLink href="#" >
-                      <Image src={instagram} alt="Esnaad Instagram image" width={39} height={39} />
+                      <Image loading="lazy" src={instagram} alt="Esnaad Instagram image" width={39} height={39} />
                     </FooterSocialLink>
                     <FooterSocialLink href="#" >
-                      <Image src={youtube} alt="Esnaad Youtube image" width={39} height={39} />
+                      <Image loading="lazy" src={youtube} alt="Esnaad Youtube image" width={39} height={39} />
                     </FooterSocialLink>
                     <FooterSocialLink href="#" >
-                      <Image src={twitter} alt="Esnaad Twitter image" width={39} height={39} />
+                      <Image loading="lazy" src={twitter} alt="Esnaad Twitter image" width={39} height={39} />
                     </FooterSocialLink>
                     <FooterSocialLink href="#" >
-                      <Image src={linkedin} alt="Esnaad LinkedIn image" width={39} height={39} />
+                      <Image loading="lazy" src={linkedin} alt="Esnaad LinkedIn image" width={39} height={39} />
                     </FooterSocialLink>
                   </div>
                 </FooterColumn>
                 <FooterColumn className="grid justify-between auto-cols-fr grid-cols-[3.25fr_1fr_1fr] grid-rows-[auto_auto] gap-x-4 row-span-1 col-span-1">
                   <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
                     <Link href="#" target="_blank" className="inline-block max-w-full rounded-md">
-                        <Image src={feeforeview} alt="Esnaad Feefo review" width={217} height={55} />
+                        <Image loading="lazy" src={feeforeview} alt="Esnaad Feefo review" width={217} height={55} />
                     </Link>
                     <Link href="#" target="_blank" className="inline-block max-w-full rounded-md">
-                        <Image src={googlereview} alt="Esnaad Google review" width={326} height={86} />
+                        <Image loading="lazy" src={googlereview} alt="Esnaad Google review" width={326} height={86} />
                     </Link>
                   </div>
                   <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
-                    <Image src={certified} alt="Esnaad Work Place certified badge" width={100} height={170} />
+                    <Image loading="lazy" src={certified} alt="Esnaad Work Place certified badge" width={100} height={170} />
                   </div>
                   <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
-                    <Image src={award} alt="Esnaad Arabian property award Real Estate" width={100} height={350} />
+                    <Image loading="lazy" src={award} alt="Esnaad Arabian property award Real Estate" width={100} height={350} />
                   </div>
                   <div className="flex flex-col justify-end gap-y-3 row-span-1 col-span-1">
                     <p className="text-silver mt-3 leading-8 self-start text-nowrap">

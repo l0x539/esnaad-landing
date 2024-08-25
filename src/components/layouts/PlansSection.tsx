@@ -48,7 +48,7 @@ const PlansSection = () => {
                             className="inline-block max-w-full col-span-1 row-span-1"
                         >
                             <div className="relative">
-                                <Image
+                                <Image loading="lazy"
                                     src={housemap1}
                                     loading="lazy"
                                     className="max-w-full align-middle block max-h-[350px] w-full object-contain"
@@ -93,7 +93,7 @@ const PlansSection = () => {
                             className="inline-block max-w-full col-span-1 row-span-1"
                         >
                             <div className="relative">
-                                <Image
+                                <Image loading="lazy"
                                     src={housemap2}
                                     loading="lazy"
                                     className="max-w-full align-middle block max-h-[350px] w-full object-contain"
