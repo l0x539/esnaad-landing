@@ -4,7 +4,7 @@ import map from "@/assets/images/MAP2.webp"
 
 const MapPopup = () => {
     return (<div className="flex absolute items-center justify-center flex-col top-[0%] left-[0%] right-[0%] bottom-[0%]">
-            <div className="relative p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
+            <div className="relative pointer-events-auto p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
                 <div>
                     <Image loading="lazy" src={map} alt="Map of all Spark by Esnaad near Dubai locations." />
                 </div>

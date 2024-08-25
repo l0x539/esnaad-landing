@@ -25,7 +25,7 @@ const ModalWrapper: FC<{children: ReactNode; isModalOpen: boolean; closeModal: (
                 animate={isModalOpen ? "open" : "close"}
                 className={`fixed pointer-events-none z-[10000] top-0 left-0 right-0 bottom-0 overflow-hidden text-center backface-visible px-[10px] pt-[10px]`}
             >
-                <div className="relative pointer-events-auto outline-0 inline-block box-border w-full mb-[10px] transform-gpu translate-x-0 translate-y-0 translate-z-0 align-middle top-[0%] left-[0%] right-[0%] bottom-[0%] h-screen z-[999] text-left p-[20px] bg-transparent max-w-[1450px]">
+                <div className="relative pointer-events-none outline-0 inline-block box-border w-full mb-[10px] transform-gpu translate-x-0 translate-y-0 translate-z-0 align-middle top-[0%] left-[0%] right-[0%] bottom-[0%] h-screen z-[999] text-left p-[20px] bg-transparent max-w-[1450px]">
                     {children}
                 </div>
             </m.div>

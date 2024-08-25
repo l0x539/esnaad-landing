@@ -16,9 +16,9 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#282828",
-        gold: "#d0a966",
+        gold: "#523D19", // d0a966
         main: "#FFF",
-        'light-sea-green': '#d0a966',
+        'light-sea-green': '#523D19',
         'black-2': '#282828',
         'light-grey': '#d0d0d0',
       },
@@ -30,13 +30,13 @@ const config: Config = {
       },
       textColor: {
         silver: "#b5b5b5",
-        gold: "#d0a966",
+        gold: "#523D19",
         "shade-black": "#2b2e38",
         'body': '#faf9f7',
         'black': '#080300',
         'white': '#ffffff',
         'midnight-blue': '#171e37',
-        'corporative': '#d0a966',
+        'corporative': '#523D19',
         'black-2': '#282828',
         'grey': '#757575',
         'linen': '#ebe0d6',
@@ -45,17 +45,17 @@ const config: Config = {
         'dark-grey': '#a3a3a3',
         'light-grey': '#d0d0d0',
         'grey-2': '#8b8b8b',
-        'light-sea-green': '#d0a966',
+        'light-sea-green': '#523D19',
         'light-yellow': '#e7dfa4',
         'blue': '#00ade5',
       },
       borderColor: {
         silver: "#b5b5b5",
         "table-blue": "#021d4a1a",
-        gold: "#d0a966",
+        gold: "#523D19",
         "bt-hover": "#282828",
         'light-grey': '#d0d0d0',
-        'light-sea-green': '#d0a966'
+        'light-sea-green': '#523D19'
 
       },
       content: {

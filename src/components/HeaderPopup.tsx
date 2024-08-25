@@ -2,7 +2,7 @@ import IconClose from "./icons/IconClose";
 
 const HeaderPopup = () => {
     return <div className="flex absolute items-center justify-center flex-col top-[0%] left-[0%] right-[0%] bottom-[0%]">
-        <div className="relative p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
+        <div className="relative pointer-events-auto p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
             <div>
                 <div className="grid gap-4 auto-cols-fr grid-areas-modal-heading">
                     <div className="leading-none text-6xl col-span-1 row-span-1 text-shade-black">Download Brochure</div>
