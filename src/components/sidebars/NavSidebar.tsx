@@ -18,7 +18,7 @@ function NavSidebar() {
     }
     else {
         document.body.style.height = "auto"
-        document.body.style.overflow = "scroll"
+        document.body.style.overflowY = "scroll"
 
     }
 

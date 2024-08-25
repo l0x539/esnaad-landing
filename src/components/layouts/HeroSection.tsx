@@ -12,7 +12,7 @@ const HeroSection = () => {
             <div className="w-full mx-auto h-full max-w-full">
                 <div className="flex flex-grow pb-10 pt-[150px] lg:pt-40 h-full items-stretch justify-center flex-col  ">
                     <div className="flex  flex-col gap-y-[12rem] lg:flex-row justify-start gap-12">
-                        <FadeInWrapper className="flex flex-col w-full lg:max-w-4xl justify-between">
+                        <div className="flex flex-col w-full lg:max-w-4xl justify-between">
                             <div className="flex w-full lg:pl-16 lg:flex-col gap-y-14">
                                 <div className="flex items-center">
                                     <Image src={union} alt="Plus sign" className="top-14 lg:top-7 relative  w-[25px] h-[25px] lg:w-[34px] lg:h-[34px]" />
@@ -26,7 +26,7 @@ const HeroSection = () => {
                             <div className=" mt-60 lg:mt-40">
                                 <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[105px]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
                             </div>
-                        </FadeInWrapper>
+                        </div>
                         <FadeInWrapper className="flex ml-auto max-w-sm w-full items-start justify-end flex-col gap-y-6">
                             <div className="flex items-start flex-col text-bt-secondary gap-y-3">
                                 <div className="uppercase text-bt-secondary text-5xl">
