@@ -71,7 +71,7 @@ function NavSidebar() {
         </DownloadBrochure>
     </div>
     {/* close sidebar button */}
-    <button className="absolute right-12 top-12" onClick={toggleSideMenu}>
+    <button id="close-menu-mobile" className="absolute right-12 top-12" onClick={toggleSideMenu}>
                 <HiOutlineXMark className="w-20 h-20" />
               </button>
   </div>

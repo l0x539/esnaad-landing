@@ -52,7 +52,7 @@ function ConsultationSection() {
                   {/* phone number input */}
                   <div className="w-full relative">
                     {/* flag icon */}
-                    <button className=" absolute top-0 bottom-0 left-6 md:left-3 right-auto flex justify-center items-center  p-[1px]">
+                    <button id="country" className=" absolute top-0 bottom-0 left-6 md:left-3 right-auto flex justify-center items-center  p-[1px]">
                     <Flag country="US" className=" w-9 h-9 md:w-5 md:h-5"/> {/* United States Flag */}
                     <FaCaretDown className="ml-[1px] h-5 w-5 md:w-3 md:h-3"/>
                     </button>
@@ -64,7 +64,7 @@ function ConsultationSection() {
                       placeholder="0551 34 36 37"
                     />
                   </div>
-                  <button type="submit" value="" className="submit-class " >
+                  <button id="send consultation" type="submit" value="" className="submit-class " >
                     send request
                   </button>
                 </form>
