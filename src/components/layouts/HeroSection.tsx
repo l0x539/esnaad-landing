@@ -8,7 +8,7 @@ import FadeInWrapper from "./FadeInWrapper";
 
 const HeroSection = () => {
     return <section id="hero" className="block min-h-[100vh] h-auto bg-hero bg-hero-center bg-no-repeat bg-cover ">
-        <section className="mt-24 lg:relative h-full px-12 ">
+        <section className="mt-24 lg:mt-0 lg:relative h-full px-12 ">
             <div className="w-full mx-auto h-full max-w-full">
                 <div className="flex flex-grow pb-10 pt-[150px] lg:pt-40 h-full items-stretch justify-center flex-col  ">
                     <div className="flex  flex-col gap-y-[12rem] lg:flex-row justify-start gap-12">
