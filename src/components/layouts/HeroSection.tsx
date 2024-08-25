@@ -24,7 +24,7 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <div className=" mt-60 lg:mt-40">
-                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[105px]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
+                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[70px]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
                             </div>
                         </div>
                         <FadeInWrapper className="flex ml-auto max-w-sm w-full items-start justify-end flex-col gap-y-6">

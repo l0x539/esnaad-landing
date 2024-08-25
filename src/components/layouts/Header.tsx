@@ -54,7 +54,7 @@ const Header = () => {
           <div className="ml-20 flex flex-none flex-wrap gap-2.5">
             <div className="hidden xl:block">
               <div className="relative flex flex-col items-start max-w-fit ">
-                <PrimaryButton id="Call Us" className="before:content-phone before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:h-4 before:w-4">
+                <PrimaryButton id="call-us" className="before:content-phone before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:h-4 before:w-4">
                   Call Us
                 </PrimaryButton>
               </div>
