@@ -10,7 +10,12 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
       <LayoutWrapper>
         <Header />
         <NavSidebar />
-        {children}
+        <div className="hidden lg:block">
+          {children}
+        </div>
+        <div className="flex w-screen h-screen justify-center items-center text-5xl lg:hidden">
+          Mobile View under construction
+        </div>
         <Footer />
       </LayoutWrapper>
     </div>
