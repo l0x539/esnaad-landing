@@ -50,7 +50,6 @@ const PlansSection = () => {
                             <div className="relative">
                                 <Image loading="lazy"
                                     src={housemap1}
-                                    loading="lazy"
                                     className="max-w-full align-middle block max-h-[350px] w-full object-contain"
                                     alt="House Map for 1 Bed room"
                                 />
@@ -95,7 +94,6 @@ const PlansSection = () => {
                             <div className="relative">
                                 <Image loading="lazy"
                                     src={housemap2}
-                                    loading="lazy"
                                     className="max-w-full align-middle block max-h-[350px] w-full object-contain"
                                     alt="House Map for 1 Bed room"
                                 />
