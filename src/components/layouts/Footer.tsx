@@ -73,7 +73,7 @@ const Footer = () => {
                     </li>
                   </ul>
                   <div className="pt-7"></div>
-                  <div className="transition-all duration-200 text-silver">© 2024 Metropolitan  Group</div>
+                  <div className="transition-all duration-200 text-silver">© 2024 The Spark By Esnaad</div>
                 </FooterColumn>
                 <FooterColumn>
                   <div className="grid grid-cols-[max-content,1fr] gap-4 auto-cols-fr">
