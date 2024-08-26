@@ -43,7 +43,7 @@ const appSlice = createSlice({
     setDirection: (state, action) => {
       state.direction = action.payload;
     },
-    initializeDictionaries: (state, value: Action<IDictionary>) => {
+    initializeDictionaries: (state, value) => {
       state.dictionaries = value.payload;
     }
   },
