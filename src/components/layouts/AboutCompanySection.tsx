@@ -9,42 +9,42 @@ import FadeInWrapper from "./FadeInWrapper";
 function AboutCompanySection() {
   const arr = [
     {
-      title: "Your Partner in Finding, Selling, or Leasing Your Dream Property",
-      desc: "Our team of experts offers comprehensive property management services and guidance on securing residency in the UAE, ensuring a seamless and rewarding experience.",
+      title: "A Visionary Force in Urban Development",
+      desc: "Esnaad, a leading real estate developer, is a dynamic subsidiary of Aura Holdings. Under the visionary leadership of CEO Ashraf Elbendari, Esnaad has rapidly established itself as a creator of exceptional living spaces.",
     },
     {
-      title: "Personalized Consultations for Your Investment Strategy",
-      desc: "Maximize the value of your property with our expert guidance. By partnering with leading banks in Dubai, we secure the best mortgage options and favorable terms for our clients.",
+      title: "A Legacy of Enduring Excellence",
+      desc: "Esnaad has successfully completed numerous projects, attracting a diverse clientele. The company is expanding its operations in Dubai to contribute to the city's growth.",
     },
   ];
 
   const statistics = [
     {
       id: "1",
-      title: "15 years",
-      desc: "Working with real estate since 2008",
+      title: "20 years",
+      desc: "Working with real estate since 2004",
       icon: <IconStat />,
     },
     {
       id: "2",
-      title: "120",
+      title: "1.2",
       unit: "thousands",
-      desc: "Сlients and the Real Estate market",
+      desc: "GCC region and Europe & MENA",
       icon: <IconHouse />,
     },
     {
       id: "3",
-      title: "Top-5",
-      desc: "Best Performing Agencies",
-      unit: "2023",
+      title: "Tax",
+      desc: "Tax-friendly environment & stable currency",
+      unit: "Advantages",
       icon: <IconRocket />,
       isDark: true
     },
     {
       id: "4",
-      title: "> 700",
-      desc: "Who specialize in your target area",
-      unit: "agents",
+      title: "ROI",
+      desc: "For business and family",
+      unit: ">6%",
       icon: <IconPerson />,
     },
   ];

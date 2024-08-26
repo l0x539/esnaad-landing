@@ -10,6 +10,9 @@ import pool4 from "@/assets/images/9.jpg";
 import gym1 from "@/assets/images/Gym 1.jpg";
 import gym2 from "@/assets/images/03.jpg";
 import hospitality from "@/assets/images/03.jpg";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
+import Locales from "@/components/Locales";
 
 const manrope = Manrope({ subsets: ["latin"], weight: ['300', '400', '500', '600', '700'] });
 
@@ -53,16 +56,20 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: {lang}
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: Locale };
 }>) {
+  const dictionary = await getDictionary(lang);
   return (
-    <html lang="en" className="scroll-smooth bg-primary">
+    <html lang={lang} className="scroll-smooth bg-primary">
       <body className={`min-h-0 bg-primary ${manrope.className}`}>
         <Layout>
           {children}
+          <Locales dictionaries={dictionary} />
         </Layout>
       </body>
     </html>

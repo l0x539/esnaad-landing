@@ -2,13 +2,33 @@
 import store from "@/store/store";
 import { FC, ReactNode } from "react";
 import { Provider } from "react-redux";
+import { useScroll } from '@use-gesture/react';
+import { useAppDispatch } from "@/store/hooks";
+import { setDirection } from "@/store/features/app/appSlice";
 
 const LayoutWrapper: FC<{
     children: ReactNode;
 }> = ({children}) => {
     return <Provider store={store}>
-        {children}
+        <GestureWrapper>
+            {children}
+        </GestureWrapper>
     </Provider>;
+}
+
+const GestureWrapper: FC<{
+    children: ReactNode;
+}> = ({children}) => {
+
+    const dispatch = useAppDispatch();
+    const bind = useScroll(({ direction: [_, y] , offset }) => {
+        console.log(offset[1]);
+        
+        dispatch(setDirection(y))
+    });
+    return <div {...bind()}>
+        {children}
+    </div>;
 }
 
 export default LayoutWrapper;

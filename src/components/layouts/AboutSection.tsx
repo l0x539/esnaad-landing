@@ -30,7 +30,7 @@ const AboutSection = () => {
 
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         y2.set((latest-0.8)*500);
-        y.set((-latest*800)+400);
+        y.set((-latest*800)+600);
     });
 
     return <section id="about" className="block">
@@ -41,7 +41,7 @@ const AboutSection = () => {
                         <div className="uppercase w-64 text-xl"> about project</div>
                     </div>
 
-                    <div className="grid mt-16 auto-cols-[1fr] gap-y-[1em] gap-x-[6.69em] grid-areas-about grid-cols-[auto-1fr] grid-rows-[auto_auto_auto_auto_auto_auto_auto]">
+                    <div className="grid mt-16 auto-cols-[1fr] gap-y-[1em] gap-x-[6.69em] grid-areas-about grid-cols-[auto-1fr] grid-rows-[auto_auto_auto_auto_auto_auto]">
                         <div className="flex pt-28 flex-col gap-y-20 self-start row-[about-index] col-[about-index]" style={{
                             gridArea: "about-index"
                         }}>
@@ -85,17 +85,17 @@ const AboutSection = () => {
                         <div className="pb-9 border-b border-solid border-silver mt-[4.38em] mb-36 will-change-transform self-start row-[about-pic2] col-[about-pic2]" style={{
                             gridArea: "about-pic2"
                         }}>
-                            <div className="overflow-hidden relative pt-[75%]">
-                                <Image loading="lazy" className="inline-block align-middle max-w-full object-contain w-full absolute top-0 left-0 right-0 bottom-0 h-full" src={roofview} alt="Rooftop Sitting Area Image." width={2450} height={1400} />
+                            <div className="overflow-hidden relative">
+                                <Image loading="lazy" className="inline-block align-middle object-contain w-[60rem] " src={roofview} alt="Rooftop Sitting Area Image." width={2450} height={1400} />
                             </div>
                             <div className="mt-7 text-3xl font-normal leading-tight">Unmatched Skyline Views and Exclusive Amenities</div>
                             <p className="leading-6 overflow-hidden mr-[30px] mt-[30px] text-silver hidden"></p>
                         </div>
-                        <div className="block mt-36 max-w-60 row-[about-logo] col-[about-logo]" style={{
+                        <div className="block mt-36 pb-16 max-w-60 row-[about-logo] col-[about-logo]" style={{
                             gridArea: "about-logo"
                         }}>
-                            <Image loading="lazy" src={sparkbyesnaad} alt="The Spark by ESNAAD Logo - Luxury Residential Project in Mohamed Bin Rashid City, Dubai" className="w-80 mb-4 max-w-full inline-block h-auto" />
-                            <Link href="#" className="max-w-full flex text-base pr-3 justify-between" >
+                            <Image loading="lazy" src={sparkbyesnaad} alt="The Spark by ESNAAD Logo - Luxury Residential Project in Mohamed Bin Rashid City, Dubai" className="w-80 -mb-8 -ml-8 max-w-full inline-block h-auto" />
+                            <Link href="#aboutus" className="max-w-full flex text-base pr-3 justify-between" >
                                 <div>About developer</div>
                                 <div className="flex ml-[4px] h-[1.4em] w-[1.4em] items-center justify-center flex-col">
 

@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^2.2.7",
+    "@use-gesture/react": "^10.3.1",
     "framer-motion": "^11.3.29",
+    "negotiator": "^0.6.3",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
+    "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -5,6 +5,20 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isModalOpen: false,
   isSideMenuOpen: false,
+  direction: 1,
+  dictionaries: {
+    main: {
+      header: {
+        "about": "About the project",
+        "properties": "Property types",
+        "gallery": "Gellery",
+        "amenities": "Amenities",
+        "contactus": "Contact US",
+        "aboutus": "About us",
+        "callus": "Call Us"
+      },
+    }
+  }
 };
 
 const appSlice = createSlice({
@@ -26,10 +40,16 @@ const appSlice = createSlice({
     closeSideMenu: (state) => {
       state.isSideMenuOpen = false;
     },
+    setDirection: (state, action) => {
+      state.direction = action.payload;
+    },
+    initializeDictionaries: (state, value: Action<IDictionary>) => {
+      state.dictionaries = value.payload;
+    }
   },
 });
 
-export const { setModal, openModal, closeModal, openSideMenu, closeSideMenu } = appSlice.actions;
+export const { initializeDictionaries, setDirection, setModal, openModal, closeModal, openSideMenu, closeSideMenu } = appSlice.actions;
 
 export const selectApp = (state: AppState) => state.app;
 

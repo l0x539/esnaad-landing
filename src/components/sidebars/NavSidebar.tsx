@@ -52,9 +52,6 @@ function NavSidebar() {
             Amenities
           </NavLink>
           <NavLink href="#hero" className="relative text-left align-top">
-            Economic Appeal
-          </NavLink>
-          <NavLink href="#hero" className="relative text-left align-top">
             Location
           </NavLink>
           <NavLink href="#hero" className="relative text-left align-top">

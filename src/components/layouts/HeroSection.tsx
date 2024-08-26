@@ -24,7 +24,7 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <div className=" mt-60 lg:mt-40">
-                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[4.9rem]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
+                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[4.9rem]  text-[12rem] lg:text-7xl max-w-[17ch]">The Spark <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
                             </div>
                         </div>
                         <FadeInWrapper className="flex ml-auto max-w-sm w-full items-start justify-end flex-col gap-y-6">
@@ -36,9 +36,9 @@ const HeroSection = () => {
                             </div>
                             <div className="flex items-start flex-col text-bt-secondary gap-y-3">
                                 <div className="uppercase text-bt-secondary text-[5.5rem] lg:text-5xl">
-                                    20/30
+                                    70/30
                                 </div>
-                                <div className="text-[3.2rem] lg:text-sm">Payment Plan (20/30/20/30)</div>
+                                <div className="text-[3.2rem] lg:text-sm">Pre & Post Delivery Payment Plan</div>
                             </div>
                             <div className="flex w-1/3 lg:w-full items-center lg:items-start flex-col text-bt-secondary gap-y-3">
                                 <div className="uppercase text-bt-secondary text-[5.5rem] lg:text-5xl">

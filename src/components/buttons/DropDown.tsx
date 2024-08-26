@@ -40,8 +40,8 @@ const DropDown: FC<{
     }, []);
   
     return (
-      <div className="mx-auto relative flex transition-all duration-200 font-medium p-0 min-h-11 items-center self-center justify-center rounded-full bg-transparent text-center outline-offset-0 tracking-tight">
-        <div ref={menuRef}>{button}</div>
+      <div ref={menuRef} className="mx-auto relative flex transition-all duration-200 font-medium p-0 min-h-11 items-center self-center justify-center rounded-full bg-transparent text-center outline-offset-0 tracking-tight">
+        <div>{button}</div>
         <nav
           className={`${
             isOpen ? "visible" : "hidden"

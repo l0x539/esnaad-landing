@@ -66,11 +66,6 @@ const Footer = () => {
                         About us
                       </FooterLink>
                     </li>
-                    <li className="self-center">
-                      <FooterLink href="#">
-                        Economic Appeal
-                      </FooterLink>
-                    </li>
                   </ul>
                   <div className="pt-7"></div>
                   <div className="transition-all duration-200 text-silver">© 2024 The Spark By Esnaad</div>
@@ -83,40 +78,27 @@ const Footer = () => {
                     <div className="text-gray text-left text-4xl uppercase">Our Experts Will Help You Secure Finest Properties</div>
                   </div>
                   <div className="grid justify-center auto-cols-fr gap-y-5 p-0 gap-x-5 grid-cols-[repeat(5,auto)]">
-                    <FooterSocialLink href="#" >
+                    <FooterSocialLink href="https://www.facebook.com/people/Esnaad-Developments/61557655342025/" >
                       <Image loading="lazy" src={facebook} alt="Esnaad Facebook image" width={39} height={39} />
                     </FooterSocialLink>
-                    <FooterSocialLink href="#" >
+                    <FooterSocialLink href="https://www.instagram.com/esnaaddevelopments/" >
                       <Image loading="lazy" src={instagram} alt="Esnaad Instagram image" width={39} height={39} />
                     </FooterSocialLink>
-                    <FooterSocialLink href="#" >
+                    <FooterSocialLink href="https://www.youtube.com/@ESNAADdevelopments" >
                       <Image loading="lazy" src={youtube} alt="Esnaad Youtube image" width={39} height={39} />
                     </FooterSocialLink>
-                    <FooterSocialLink href="#" >
+                    <FooterSocialLink href="https://x.com/EsnaadD" >
                       <Image loading="lazy" src={twitter} alt="Esnaad Twitter image" width={39} height={39} />
                     </FooterSocialLink>
-                    <FooterSocialLink href="#" >
+                    <FooterSocialLink href="https://www.linkedin.com/company/esnaad-developments" >
                       <Image loading="lazy" src={linkedin} alt="Esnaad LinkedIn image" width={39} height={39} />
                     </FooterSocialLink>
                   </div>
                 </FooterColumn>
-                <FooterColumn className="grid justify-between auto-cols-fr grid-cols-[3.25fr_1fr_1fr] grid-rows-[auto_auto] gap-x-4 row-span-1 col-span-1">
-                  <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
-                    <Link href="#" target="_blank" className="inline-block max-w-full rounded-md">
-                        <Image loading="lazy" src={feeforeview} alt="Esnaad Feefo review" width={217} height={55} />
-                    </Link>
-                    <Link href="#" target="_blank" className="inline-block max-w-full rounded-md">
-                        <Image loading="lazy" src={googlereview} alt="Esnaad Google review" width={326} height={86} />
-                    </Link>
-                  </div>
-                  <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
-                    <Image loading="lazy" src={certified} alt="Esnaad Work Place certified badge" width={100} height={170} />
-                  </div>
-                  <div className="flex flex-col gap-y-8 row-span-1 col-span-1">
-                    <Image loading="lazy" src={award} alt="Esnaad Arabian property award Real Estate" width={100} height={350} />
-                  </div>
-                  <div className="flex flex-col justify-end gap-y-3 row-span-1 col-span-1">
-                    <p className="text-silver mt-3 leading-8 self-start text-nowrap">
+                <FooterColumn className="grid justify-between auto-cols-fr grid-cols-auto grid-rows-auto gap-x-4 row-span-1 col-span-1">
+                  
+                  <div className="flex justify-center items-center">
+                    <p className="text-silver leading-8 text-nowrap">
                       City Walk Building #1, Al Wasl,  <br />
                       Dubai, UAE
                     </p>
@@ -171,6 +153,6 @@ const FooterSocialLink: FC<{
   children
 }) => {
   return <div className="flex items-center justify-center flex-col">
-    <Link href={href} className="transition-[filter] duration-200 inline-block hover:inline-0 hover:brightness-200">{children}</Link>
+    <Link href={href} target="_blank" className="transition-[filter] duration-200 inline-block hover:inline-0 hover:brightness-200">{children}</Link>
   </div>
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "@/assets/images/Img-Agent_1-p-800.webp";
+import img from "@/assets/images/AGENT-IMAGE.png";
 import Flag from "react-flagkit";
 import { FaCaretDown } from "react-icons/fa6";
 import FadeInWrapper from "./FadeInWrapper";
@@ -18,15 +18,17 @@ function ConsultationSection() {
             {/* grid container */}
             <div className="md:grid flex flex-col md:grid-cols-[0.75fr_1fr] gap-4  font-manrope pb-[7.8em]">
               <div className="md:col-span-1 md:row-span-1 text-[8rem] md:text-[4.2rem]  leading-none ">
-                Free consultation from Sales Team
+                Get Consultation from sales team
               </div>
-              <Image loading="lazy"
+              <Image
                 src={img}
-                className="hidden md:block col-start-2 col-end-3 row-start-1 row-end-3 w-[37rem] mr-0 pb-0 pr-0 max-w-full align-middle"
+                width={706}
+                height={706}
+                className="hidden md:block col-start-2 col-end-3 row-start-1 row-end-3 w-[34rem] mr-0 pb-0 pr-0 max-w-full align-middle rounded-full border border-silver-lux"
                 alt="woman picture"
               />
-              <div className="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3 self-start justify-self-end text-silver md:max-w-[18rem] mt-6 md:mt-12  mb-0 text-[2.7rem] md:text-[1.2rem] md:leading-8">
-              Our Specialists Provide Expert Advice on Top Luxury Real Estate Investments, Ensuring Maximum Benefits and Optimal Returns for You.
+              <div className="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3 self-start justify-self-end text-silver md:max-w-[18rem] mt-6  mb-0 text-[2.7rem] md:text-[1.2rem] md:leading-8 pb-0 pt-6 rounded-3xl bg-white">
+                Our Specialists Provide Expert Advice on Top Luxury Real Estate Investments, Ensuring Maximum Benefits and Optimal Returns for You.
               </div>
 
               {/* contact form */}

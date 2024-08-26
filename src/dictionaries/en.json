@@ -1,0 +1,13 @@
+{
+    "main": {
+        "header": {
+            "about": "About the project",
+            "properties": "Property types",
+            "gallery": "Gellery",
+            "amenities": "Amenities",
+            "contactus": "Contact US",
+            "aboutus": "About us",
+            "callus": "Call Us"
+        }
+    }
+}

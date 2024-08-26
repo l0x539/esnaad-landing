@@ -1,0 +1,13 @@
+{
+    "main": {
+        "header": {
+            "about": "عن المشروع",
+            "properties": "أنواع العقارات",
+            "gallery": "المعرض",
+            "amenities": "وسائل الراحة",
+            "contactus": "اتصل بنا",
+            "aboutus": "معلومات عنا",
+            "callus": "اتصل بنا"
+        }
+    }
+}

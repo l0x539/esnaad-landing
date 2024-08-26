@@ -54,6 +54,7 @@ const config: Config = {
         silver: "#b5b5b5",
         "table-blue": "#021d4a1a",
         gold: "#523D19",
+        "silver-lux": "#d4d5db",
         "bt-hover": "#282828",
         'light-grey': '#d0d0d0',
         'light-sea-green': '#523D19'
@@ -73,7 +74,6 @@ const config: Config = {
           "about-index about-text",
           "about-index about-text",
           "about-index about-text",
-          "about-index about-pic2",
           "about-pic1 about-pic2",
           "about-pic1 about-pic3",
           "about-logo about-pic3",
