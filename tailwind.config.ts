@@ -29,7 +29,8 @@ const config: Config = {
         bittight: "-.01em"
       },
       textColor: {
-        silver: "#424242", // B5B5B5
+        silver: "#b5b5b5",
+        "dark-silver": "#424242",
         gold: "#523D19",
         "shade-black": "#2b2e38",
         'body': '#faf9f7',

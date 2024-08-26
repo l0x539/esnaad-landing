@@ -19,7 +19,7 @@ const MapButton = () => {
         <>
             <div
                 onClick={openModalHandler}
-                className="cursor-pointer max-w-full flex items-center justify-start text-silver"
+                className="cursor-pointer max-w-full flex items-center justify-start text-dark-silver"
             >
                 <div className="flex mt-auto h-6 w-6 items-center justify-center flex-col">
                     <IconPlus />

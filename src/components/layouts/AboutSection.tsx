@@ -46,7 +46,7 @@ const AboutSection = () => {
                             gridArea: "about-index"
                         }}>
                             <MapButton />
-                            <div className="flex items-center justify-start text-silver ml-40">
+                            <div className="flex items-center justify-start text-dark-silver ml-40">
                                 <div className="flex mt-auto w-6 h-6 items-center justify-center flex-col">
                                     <IconPlus />
                                 </div>
