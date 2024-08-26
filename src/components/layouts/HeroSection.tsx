@@ -7,7 +7,7 @@ import DownloadBrochure from "../buttons/DownloadBrochure";
 import FadeInWrapper from "./FadeInWrapper";
 
 const HeroSection = () => {
-    return <section id="hero" className="block min-h-[100vh] h-auto bg-hero bg-center bg-no-repeat bg-cover ">
+    return <section id="hero" className="block min-h-[100vh] h-screen bg-hero bg-center bg-no-repeat bg-cover ">
         <section className="mt-24 lg:mt-0 lg:relative h-full px-12 ">
             <div className="w-full mx-auto h-full max-w-full">
                 <div className="flex flex-grow pb-10 pt-[150px] lg:pt-40 h-full items-stretch justify-center flex-col  ">
@@ -24,7 +24,7 @@ const HeroSection = () => {
                                 </div>
                             </div>
                             <div className=" mt-60 lg:mt-40">
-                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[70px]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
+                                <h1 className="my-0 uppercase text-bt-secondary leading-none lg:leading-[4.9rem]  text-[12rem] lg:text-7xl max-w-[17ch]">Address <br/><span className="text-[3.5rem]">Mohamed Bin Rashid City</span></h1>
                             </div>
                         </div>
                         <FadeInWrapper className="flex ml-auto max-w-sm w-full items-start justify-end flex-col gap-y-6">
