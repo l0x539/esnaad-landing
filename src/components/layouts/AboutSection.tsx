@@ -59,7 +59,7 @@ const AboutSection = () => {
                             gridArea: "about-text"
                         }}>
                             <h2 className="my-0 text-7xl">Exclusive Residences in the Heart of MBR City </h2>
-                            <p className="mt-6 leading-normal text-silver ">
+                            <p className="mt-6 leading-normal text-dark-silver ">
                                 The Spark by ESNAAD is a prestigious residential development situated in the heart of Mohamed Bin Rashid City, District 11. This modern project offers a blend of luxury and convenience, featuring a collection of meticulously designed apartments and exclusive living spaces.
                                 <br />
                                 <br />
