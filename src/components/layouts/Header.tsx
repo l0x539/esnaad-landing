@@ -36,9 +36,9 @@ const Header = () => {
       animate={(direction>=0) ? "open" : "closed" }
       className="fixed flex items-center top-0 left-0 right-0 bottom-auto z-40 px-16 py-8 bg-primary text-bt-secondary min-h-[80px] lg:min-h-20">
       <div className="flex mx-auto justify-space-between items-center w-full h-full ">
-        <Link href={"#hero"} className="inline-block max-w-full">
+        <div className="cursor-pointer inline-block max-w-full">
           <Image loading="lazy" src={sparkbyesnaad} width={190} height={34} alt="ESNAAD Real Estate Development Logo - Luxury Homes in Dubai" />
-        </Link>
+        </div>
         <div className="flex justify-end items-center w-full gap-x-7">
           <nav className="static xl:block float-right w-full hidden h-10">
             <div className="flex justify-end w-full h-full">

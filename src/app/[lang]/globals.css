@@ -29,3 +29,30 @@ body {
 .submit-class {
   @apply  placeholder:text-dark-grey placeholder:font-medium border-[0.0625rem] border-light-grey   rounded-full h-[69px] md:h-[4.17rem] mb-0 font-manrope text-3xl py-2 md:text-[0.97rem] relative capitalize bg-light-sea-green text-white font-semibold hover:bg-black-2 transition-colors ease-linear duration-150;
 }
+
+body {
+  --sb-track-color: #282828;
+  --sb-thumb-color: #523d19;
+  --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}

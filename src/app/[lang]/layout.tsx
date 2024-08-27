@@ -66,7 +66,7 @@ export default async function RootLayout({
   const dictionary = await getDictionary(lang);
   return (
     <html lang={lang} className="scroll-smooth bg-primary">
-      <body className={`min-h-0 bg-primary ${manrope.className}`}>
+      <body className={`w-screen overflow-x-hidden min-h-0 bg-primary ${manrope.className}`}>
         <Layout>
           {children}
           <Locales dictionaries={dictionary} />

@@ -11,7 +11,7 @@ const initialState = {
       header: {
         "about": "About the project",
         "properties": "Property types",
-        "gallery": "Gellery",
+        "gallery": "Gallery",
         "amenities": "Amenities",
         "contactus": "Contact US",
         "aboutus": "About us",
