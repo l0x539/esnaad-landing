@@ -58,5 +58,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grecaptcha-logo {
-  visibility: hidden;
+  visibility: hidden !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0px !important;
 }
