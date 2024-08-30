@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isModalOpen: false,
   isSideMenuOpen: false,
-  direction: 1,
+  direction: 0,
   dictionaries: {
     main: {
       header: {

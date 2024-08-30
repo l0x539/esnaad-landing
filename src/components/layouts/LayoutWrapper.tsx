@@ -21,10 +21,9 @@ const GestureWrapper: FC<{
 }> = ({children}) => {
 
     const dispatch = useAppDispatch();
-    const bind = useWheel(({ direction: [_, y] , offset }) => {
-        console.log(y);
-        
-        dispatch(setDirection(y))
+    const bind = useWheel(({ first, direction: [_, y] , offset }) => {
+        if ((typeof y !== "undefined") && !first)
+            dispatch(setDirection(y))
     });
     return <div {...bind()}>
         {children}

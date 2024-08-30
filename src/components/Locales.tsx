@@ -14,7 +14,6 @@ const Locales: FC<{dictionaries: IDictionary}> = ({
       moving,
       down
     }) => {
-      console.log(down);
     }
   }, {
     target: typeof document !== "undefined" ? document.body : undefined
