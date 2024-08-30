@@ -11,24 +11,35 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@react-email/render": "^1.0.1",
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^2.2.7",
     "@use-gesture/react": "^10.3.1",
     "framer-motion": "^11.3.29",
+    "fs": "^0.0.1-security",
     "negotiator": "^0.6.3",
     "next": "14.2.5",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "^3.0.1",
     "react-flagkit": "^2.0.4",
+    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.10.1",
     "react-icons": "^5.3.0",
-    "react-redux": "^9.1.2"
+    "react-redux": "^9.1.2",
+    "stream": "^0.0.3",
+    "validator": "^13.12.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
     "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/validator": "^13.12.1",
     "cypress": "^13.13.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
@@ -36,5 +47,10 @@
     "tailwindcss": "^3.4.1",
     "tailwindcss-3d": "^1.0.7",
     "typescript": "^5"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }

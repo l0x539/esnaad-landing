@@ -1,6 +1,14 @@
+"use client"
+import { GoogleReCaptcha } from "react-google-recaptcha-v3";
 import IconClose from "./icons/IconClose";
+import { useState } from "react";
 
 const HeaderPopup = () => {
+    const [token, setToken] = useState("");
+    const handleVerify = (token: string) => {
+        setToken(token)
+    };
+
     return <div className="flex absolute items-center justify-center flex-col top-[0%] left-[0%] right-[0%] bottom-[0%]">
         <div className="relative pointer-events-auto p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
             <div>
@@ -9,10 +17,11 @@ const HeaderPopup = () => {
                     <div className="mb-[15px]" style={{
                         gridArea: "form"
                     }}>
-                        <form action="#" className="flex justify-between flex-col gap-[.94em]">
-                            <input type="text" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="Full Name" />
-                            <input type="email" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="Email" />
-                            <input type="number" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="05 888 6666" />
+                        <form action="/api/contact" method="POST" encType="application/x-www-form-urlencoded" className="flex justify-between flex-col gap-[.94em]">
+                            <input type="text" name="name" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="Full Name" />
+                            <input type="email" name="email" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="Email" />
+                            <input type="number" name="number" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="05 888 6666" />
+                            <input type="hidden" name="recaptcha" className="block w-full py-[8px] leading-[1.43] align-middle z-[1] relative font-medium text-base px-5 rounded-full bg-transparent text-neutral-400 border border-solid border-gray hover:border-gold h-[4.17rem]" placeholder="05 888 6666" value={token} />
                             <input type="submit" className="cursor-pointer border-0 py-[9px] px-[15px] font-semibold w-full rounded-full text-bt-primary bg-gold transition-all duration-200 mt-1 h-[4.17rem]" value="Download" />
                         </form>
                     </div>
@@ -22,6 +31,7 @@ const HeaderPopup = () => {
                 <IconClose />
             </div>
         </div>
+        <GoogleReCaptcha onVerify={handleVerify} />
     </div>;
 }
 

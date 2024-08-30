@@ -27,17 +27,17 @@ const Header = () => {
       }}
       variants={{
         open: {
-          y: 0
+          y: -150
         },
         closed: {
-          y: -150
+          y: 0
         }
       }}
       transition={{
         ease: "easeIn",
         duration: 0.4
       }}
-      animate={(direction>=0) ? "closed" : "open" }
+      animate={(direction>=0) ? "open" : "closed" }
       className="fixed flex items-center top-0 left-0 right-0 bottom-auto z-40 px-16 py-8 bg-primary text-bt-secondary min-h-[80px] lg:min-h-20">
       <div className="flex mx-auto justify-space-between items-center w-full h-full ">
         <NavLink href="#hero" className="cursor-pointer inline-block max-w-full border-b-0">
