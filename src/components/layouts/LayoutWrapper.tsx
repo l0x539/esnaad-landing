@@ -2,7 +2,7 @@
 import store from "@/store/store";
 import { FC, ReactNode } from "react";
 import { Provider } from "react-redux";
-import { useScroll } from '@use-gesture/react';
+import { useWheel } from '@use-gesture/react';
 import { useAppDispatch } from "@/store/hooks";
 import { setDirection } from "@/store/features/app/appSlice";
 
@@ -21,8 +21,8 @@ const GestureWrapper: FC<{
 }> = ({children}) => {
 
     const dispatch = useAppDispatch();
-    const bind = useScroll(({ direction: [_, y] , offset }) => {
-        console.log(offset[1]);
+    const bind = useWheel(({ direction: [_, y] , offset }) => {
+        console.log(y);
         
         dispatch(setDirection(y))
     });
