@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.grecaptcha-logo {
+.grecaptcha-logo, .grecaptcha-badge {
   visibility: hidden !important;
   box-shadow: none !important;
   border: none !important;
