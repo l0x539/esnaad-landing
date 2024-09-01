@@ -1,5 +1,4 @@
 "use client"
-import DownloadBrochure from "@/components/buttons/DownloadBrochure";
 import swimmingpool from "@/assets/images/Swimming Pool 1.jpg";
 import gym from "@/assets/images/Gym 1.jpg";
 import sauna from "@/assets/images/SAUNA 03.jpg";
@@ -11,6 +10,8 @@ import { useMotionValueEvent, useScroll, useSpring } from "framer-motion";
 import { motion as m } from "framer-motion";
 import FadeInWrapper from "./FadeInWrapper";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import dynamic from "next/dynamic";
+const DownloadBrochure = dynamic(() => import("@/components/buttons/DownloadBrochure"), {ssr: false});
 
 const ServiceSection = () => {
     const targetRef = useRef<HTMLDivElement>(null);

@@ -3,8 +3,9 @@ import Image from "next/image";
 import PrimaryButton from "../buttons/PrimaryButton";
 import IconExport from "../icons/IconExport";
 import Link from "next/link";
-import DownloadBrochure from "../buttons/DownloadBrochure";
 import FadeInWrapper from "./FadeInWrapper";
+import dynamic from "next/dynamic";
+const DownloadBrochure = dynamic(() => import("../buttons/DownloadBrochure"), {ssr: false});
 
 const HeroSection = () => {
     return <section id="hero" className="block min-h-[100vh] h-screen bg-hero bg-center bg-no-repeat bg-cover ">

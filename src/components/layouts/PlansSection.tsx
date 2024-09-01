@@ -7,7 +7,8 @@ import IconExport from "../icons/IconExport";
 import FadeInWrapper from "./FadeInWrapper";
 import TableRow from "../table/TableRow";
 import Table from "../table/Table";
-import DownloadBrochure from "../buttons/DownloadBrochure";
+import dynamic from "next/dynamic";
+const DownloadBrochure = dynamic(() => import("../buttons/DownloadBrochure"), {ssr: false});
 
 const PlansSection = () => {
     // TODO: refactor table

@@ -1,8 +1,9 @@
 "use client";
 import IconExport from "../icons/IconExport";
 import { FC, ReactNode, useState } from "react";
-import HeaderPopup from "../HeaderPopup";
 import ModalWrapper from "../ModalWrapper";
+import dynamic from "next/dynamic";
+const HeaderPopup = dynamic(() => import("../HeaderPopup"), {ssr: false})
 
 const DownloadBrochure: FC<{
     className?: string;

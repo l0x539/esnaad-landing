@@ -6,7 +6,8 @@ import { RxHamburgerMenu } from "react-icons/rx"
 import NavLink from "../navigation/NavLink"
 import IconDownload from "../icons/IconDownload"
 import { FaArrowRight } from "react-icons/fa6"
-import DownloadBrochure from "../buttons/DownloadBrochure"
+import dynamic from "next/dynamic"
+const DownloadBrochure = dynamic(() => import("../buttons/DownloadBrochure"), {ssr: false})
 
 function NavSidebar() {
   const { toggleSideMenu, isSideMenuOpen } = useNavSidebar()
