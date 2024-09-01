@@ -25,7 +25,7 @@ const GestureWrapper: FC<{
         if ((typeof y !== "undefined") && !first)
             dispatch(setDirection(y))
     });
-    return <div {...bind()}>
+    return <div className="relative" {...bind()}>
         {children}
     </div>;
 }
