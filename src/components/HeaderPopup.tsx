@@ -1,12 +1,16 @@
 "use client"
-import { ReCaptcha, useReCaptcha } from "next-recaptcha-v3";
 import IconClose from "./icons/IconClose";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const ReCaptchaProvider = dynamic(() => import("next-recaptcha-v3").then((module) => module.ReCaptchaProvider), {ssr: false})
+const ReCaptcha = dynamic(() => import("next-recaptcha-v3").then((module) => module.ReCaptcha), {ssr: false})
 
 const HeaderPopup = () => {
     const [token, setToken] = useState("");
 
-    return <div className="flex absolute items-center justify-center flex-col top-[0%] left-[0%] right-[0%] bottom-[0%]">
+    return <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_GOOGLE_PUBLIC_SECRET_KEY??""}>
+    <div className="flex absolute items-center justify-center flex-col top-[0%] left-[0%] right-[0%] bottom-[0%]">
         <div className="relative pointer-events-auto p-10 m-auto max-w-[70rem] rounded-[1.25em] bg-white z-10 w-full bg-[length:auto,_contain] bg-repeat bg-head-modal">
             <div>
                 <div className="grid gap-4 auto-cols-fr grid-areas-modal-heading">
@@ -29,7 +33,8 @@ const HeaderPopup = () => {
                 <IconClose />
             </div>
         </div>
-    </div>;
+    </div>
+    </ReCaptchaProvider>;
 }
 
 export default HeaderPopup;

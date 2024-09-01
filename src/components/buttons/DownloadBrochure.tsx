@@ -3,7 +3,6 @@ import IconExport from "../icons/IconExport";
 import { FC, ReactNode, useState } from "react";
 import HeaderPopup from "../HeaderPopup";
 import ModalWrapper from "../ModalWrapper";
-import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 const DownloadBrochure: FC<{
     className?: string;
@@ -30,9 +29,7 @@ const DownloadBrochure: FC<{
                 </div>
             </div>
             <ModalWrapper isModalOpen={isOpen} closeModal={closeModalHandler}>
-                <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_GOOGLE_PUBLIC_SECRET_KEY??""}>
-                    <HeaderPopup />
-                </ReCaptchaProvider>
+                <HeaderPopup />
             </ModalWrapper>
       </>
     );
